@@ -1,0 +1,78 @@
+/*============================
+COMMON
+============================*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: text-font(Hira);
+    color: $text-color-dark;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color-dark;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.pc {
+    display: block;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.sp {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #244BD0;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}

@@ -1,0 +1,6 @@
+@function text-font($font-name) {
+    @return map-get($font-family, $font-name);
+}
+@function text-weight($txt-weight) {
+    @return map-get($font-weight, $txt-weight);
+}

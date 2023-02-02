@@ -1,0 +1,23 @@
+/*============================
+VARIABLES
+============================*/
+
+$font-family: (
+    "Cabin": ('Cabin', sans-serif),
+    "Noto": ('Noto Sans JP', sans-serif),
+    "Hira": ('Hiragino Sans', 'Noto Sans JP', sans-serif),
+);
+$font-weight: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+$text-color-dark: #222222;
+$text-color-light: #fff;
+
+/*-- Default width --*/
+$main-width:1200px;
+
+/*-- media query variable --*/
+$mobile: 767px;
+$pc: 768px;

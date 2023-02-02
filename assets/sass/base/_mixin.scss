@@ -1,0 +1,80 @@
+/*============================
+MIXIN
+============================*/
+
+/*-- Reset Elements --*/
+@mixin reset {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-- Default width container --*/
+@mixin MainBox {
+    width: $main-width;
+    margin: 0 auto;
+}
+
+@mixin BoxFlex {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 auto;
+}
+
+@mixin ElementCenterAbsolute {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+
+/*-- Media Query (MOBILE) --*/
+@mixin mobile {
+    @media(max-width: $mobile) {
+        @content;
+    }
+}
+
+/*-- SMALL (IPHONE SE & ANDROID) --*/
+@mixin mobile-small {
+    @media(min-width:300px) and (max-width:374px) {
+        @content;
+    }
+}
+
+/*-- MEDIUM (IPHONE 6/7/8/10) --*/
+@mixin mobile-medium {
+    @media(max-width: 375px) {
+        @content;
+    }
+}
+
+/*-- LARGE (IPHONE 6/7/8/PLUS) --*/
+@mixin mobile-large {
+    @media(min-width:376px) and (max-width:500px) {
+        @content;
+    }
+}
+
+
+/*-- Media Query (PC) --*/
+@mixin pc-only {
+    @media(min-width: $pc) {
+        @content;
+    }
+}
+
+@mixin pc-small {
+    @media(min-width: $main-width) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media(min-width:768px) and (max-width:1000px) {
+        @content;
+    }
+}

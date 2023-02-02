@@ -1,0 +1,20 @@
+/*============================
+STYLE
+============================*/
+
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/function';
+@import 'base/common';
+
+@import 'components/button';
+@import 'components/forms';
+@import 'components/hikaku';
+@import 'components/mv';
+@import 'components/ranking';
+@import 'components/titles';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
