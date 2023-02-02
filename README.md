@@ -1,1 +1,1 @@
-# Clone this bad boy to your mothaforking local and see the focken magic.
+# Clone this bad boy to your mothaforking local and see the focken magics.
